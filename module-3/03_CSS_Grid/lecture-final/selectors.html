@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            font-size: 32px;
+            border: 2px black dotted;
+        }
+        div {
+            background-color: cornflowerblue;
+            width: 80%;
+            height: 80%;
+            border: 2px black solid;
+            margin: 5px;
+            padding: 10px;
+        }
+    
+        main > div {
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <div>This is a child div</div>
+        <div>This is a child div
+            <div>This is a descendent div
+                <div>This is a second level descendent div</div>
+            </div>
+        </div>
+        <div>This is a child div</div>
+    </main>
+    
+</body>
+</html>

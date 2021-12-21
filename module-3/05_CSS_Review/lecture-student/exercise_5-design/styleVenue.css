@@ -1,0 +1,91 @@
+body {
+    display: grid;
+    font-family: serif, Helvetica, sans-serif;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "title nav"
+    "hr hr"
+    "venue venue";
+    background-color: black;
+    color: white;
+
+}
+
+header {
+    grid-area: title;
+    margin-top: -80px;
+    padding-left: 50px;
+}
+
+nav {
+    grid-area: nav;
+    margin-top: -80px;
+    padding-right: 50px;
+}
+
+hr {
+    grid-area: hr;
+    margin-top: -90px;
+}
+
+main {
+    grid-area: venue;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+section#venues {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+section h2 {
+    margin-top: -60px;
+}
+
+section > p{
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+section article  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "name img"
+    "desc img";
+    justify-content: flex-start;
+}
+
+article > h3 {
+    grid-area: name;
+    align-self: end;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+article > p {
+    grid-area: desc;
+    align-self: start;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+article img {
+    grid-area: img;
+    width: 500px;
+    height: auto;
+    border-radius: 15%;
+}
+
+a, a:hover, a:active, a:visited { 
+    color: white;
+ }

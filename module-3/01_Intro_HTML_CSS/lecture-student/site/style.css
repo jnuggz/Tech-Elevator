@@ -1,0 +1,26 @@
+h1 {
+    color: purple;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 24px;
+    color: green;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+
+img {
+    width: 200px;
+}

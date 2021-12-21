@@ -1,0 +1,67 @@
+
+main section div.guest img {
+    height: 150px;
+    border-radius: 150px;
+}
+
+main section div.guest img.guestOfHonor {
+    height: 300px;
+    border-radius: 50px;
+}
+
+main section {
+    display : grid;
+    grid-template-columns: 25px 1fr 1fr 1fr 25px;
+    grid-template-areas: 
+        ". banner  banner banner ."
+        ". cat  . dog ."
+        ". dolphin monkey rabbit . "
+        ". lamb guineapig hedgehog .";
+    grid-gap: 10px;
+}
+
+main section div.banner {
+    grid-area: banner;
+    justify-self: center;
+}
+
+main section div.cat {
+    grid-area: cat;
+    justify-self: end;
+}
+
+main section div.dog {
+    grid-area: dog;
+    justify-self: start;
+}
+
+main section div.dolphin {
+    grid-area: dolphin;
+    justify-self: end;
+    align-self: center;
+}
+
+main section div.monkey {
+    grid-area: monkey;
+}
+
+main section div.lamb {
+    grid-area: lamb;
+    justify-self: end;
+}
+
+main section div.guineapig {
+    grid-area: guineapig;
+    justify-self: center;
+}
+
+main section div.hedgehog {
+    grid-area: hedgehog;
+    justify-self: start;
+}
+
+main section div.rabbit {
+    grid-area: rabbit;
+    justify-self: start;
+    align-self: center;
+}

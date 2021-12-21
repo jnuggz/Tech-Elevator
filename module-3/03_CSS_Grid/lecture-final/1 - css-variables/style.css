@@ -1,0 +1,38 @@
+:root {
+    --text-color: red;
+    --content-size: 80vw;
+}
+
+h1 {
+    color: blue;
+}
+
+section h2 {
+    background-color: yellow;
+    color: var(--text-color);
+    width: var(--content-size);
+}
+
+section > p {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    width: var(--content-size);
+}
+
+section > div {
+    color: var(--text-color);
+    font-size: 1.75rem;
+    border: 1px solid black;
+    padding: 10px;
+    width: var(--content-size);
+}
+
+section > div > p {
+    color: teal;
+    background-image: linear-gradient(lightblue, pink);
+    padding: 5px;
+    width: var(--content-size);
+}
+
+
+

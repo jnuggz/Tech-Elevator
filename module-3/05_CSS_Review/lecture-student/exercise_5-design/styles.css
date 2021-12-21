@@ -1,0 +1,62 @@
+
+html {
+    min-height: 100%;
+    position: relative;
+    background-image: url("lightbulb.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+body {
+    display: grid;
+    font-family: serif, Helvetica, sans-serif;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header nav"
+    "message message"
+    "footer .";
+    height: 100vh;
+    margin-top: -72px;
+
+}
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -80px;
+    padding-right: 50px;
+    font-size: 18px;
+}
+
+a, a:hover, a:active, a:visited { 
+    color: white;
+ }
+
+
+header {
+    grid-area: header;
+    padding-left: 50px;
+}
+
+main {
+    display: flex;
+    grid-area: message;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+main img {
+    width: 35%;
+}
+
+footer {
+    align-self: flex-end;
+    color: white;
+}

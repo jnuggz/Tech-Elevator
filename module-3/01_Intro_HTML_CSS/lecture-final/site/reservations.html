@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bits & Bytes</h1>
+        <p>>Welcome to the internet's best restaurant</p>
+    </header>
+    <nav>
+        <a href="index.html">Back to menu</a>
+    </nav>
+    <main>
+        <form action="/api/reservations" method="GET">
+            <div>
+                <label for="reservationName">Name:</label>
+                <input type="text" name="reservationName" id="reservationName" />
+            </div>
+            <div>
+                <label for="numberOfGuests">Number of guests:</label>
+                <input type="number" name="numberOfGuests" id="numberOfGuests" />
+            </div>
+            <div>
+                <label for="reservationDate">Date:</label>
+                <input type="date" name="reservationDate" id="reservationDate" />
+            </div>
+            <div>
+                <label for="reservationTime">Time:</label>
+                <input type="time" name="reservationTime" id="reservationTime" />
+            </div>
+            <div>
+                <label for="specialOccasion">Special Occasion:</label>
+                <input type="checkbox" id="specialOccasion" name="specialOccasion" />
+            </div>
+            <div>
+                <label for="occasionType">Occasion Type:</label>
+                <select name="occasionType" id="occasionType">
+                    <option value="A">Anniversary</option>
+                    <option value="B">Birthday</option>
+                    <option value="O">Other</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" />
+            </div>
+        </form>
+    </main>
+</body>
+</html>

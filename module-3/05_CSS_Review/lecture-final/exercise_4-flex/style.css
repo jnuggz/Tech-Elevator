@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(154, 177, 240);
+}
+
+header div {
+    text-align: center;
+}
+header div img {
+  width: 500px;
+}
+
+div.racer {
+    width: 150px;
+}
+
+div.racer img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 100px;
+}
+
+section#awards {
+    background-image: url("./img/podium.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    height: 300px;
+    width: 600px;
+
+}
+section.spectators {
+    border-top: 5px black solid;
+    padding-top: 50px;
+    width: 50%;
+    margin-top: 50px;
+}
+
+
+/* 
+Write your CSS to move the racers below this comment.
+Do not change any CSS above this comment or the HTML. 
+
+Solve this using Flexbox.  Do not use Grid.
+
+*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.spectators {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+section#awards {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+section#awards div.second {
+    align-self: center;
+}
+
+section#awards div.third {
+    align-self: flex-end;
+    padding-bottom: 5%;
+}

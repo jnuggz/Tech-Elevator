@@ -1,0 +1,37 @@
+/* The second and fourth items must grow twice 
+as much as the first and third items. 
+The first and third items must grow 
+to fit the container. */
+body {
+  margin: 20px;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5em;
+}
+
+.container {
+  background-color: #F0F0F0;
+   /* make flex container */
+   display:flex;
+}
+
+.box {
+  padding: 40px 55px;
+  margin: 15px 0;
+  background-color: #00AFEF;
+  color: #fff;
+  text-align: center;
+  border: solid 1px #777;
+  /*Because we want the 2nd and 4th child to grow
+  at a rate 2x faster than 1st and 3rd child, we 
+  need to give a value of 1 to the remaining
+  children as a reference.*/
+  flex-grow: 1;
+}
+
+.box:nth-child(2),
+.box:nth-child(4) {
+  background-color: #005270;
+  /*now we can double the rate these divs grow*/
+  flex-grow: 2;
+}

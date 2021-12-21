@@ -1,0 +1,54 @@
+/* Display all navigation items and logo in a row
+and center align the navigation items. */
+
+body {
+  margin: 20px;
+  padding: 0
+}
+
+header {
+  background-color: #F0F0F0;
+  padding: 20px;
+    /* make header flex container */
+    display:flex;
+    /* center items in flex container on the cross axis */
+    align-items: center;
+}
+
+.logo {
+  width: 140px;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+    /* make ul a flex container */
+    display: flex;
+    /* move items to the center along the main-axis */
+    justify-content: center;
+}
+
+li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #707070;
+  padding: 0 20px 0 0;
+  margin-left: 20px;
+}
+
+a,
+a:visited {
+  color: #707070;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00AFEF;
+  text-decoration: underline;
+}

@@ -1,0 +1,22 @@
+.hidden {
+    display: none;
+}
+
+table th {
+    text-align: left;
+    background-color: lightgray;
+}
+
+table tr td {
+    width: 200px;
+}
+
+table tbody tr:nth-child(4n) {
+    background-color: lightblue;
+}
+
+tr.data td {
+    padding-left: 20px;
+    background-color: lightyellow;
+}
+

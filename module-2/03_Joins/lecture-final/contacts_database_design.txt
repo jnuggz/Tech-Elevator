@@ -1,0 +1,32 @@
+person
+    person_id serial primary key
+    firstName  varchar(45) not null
+    lastName   varchar(45) not null
+
+person_address
+    person_id FK    
+    address_id FK
+
+address
+    address_id PK
+    address  NOT NULL
+    address2
+    city   NOT NULL
+    district  varchar(64)  NOT NULL
+    postalCode  varhcar(16)  NOT NULL
+    countryCode char(3)
+    type   CHECK 
+    otherDescription
+
+Phone
+    phone_id PK
+    person_id FK
+    phone
+    phone_type CHECK
+
+
+Email
+    email_id PK
+    person_id
+    email
+    addressType CHECK

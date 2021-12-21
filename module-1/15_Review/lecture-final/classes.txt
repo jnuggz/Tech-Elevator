@@ -1,0 +1,21 @@
+BookUser
+    id
+    firstName
+    lastName
+    favoriteBook
+    email
+    BookCollection
+
+
+Book
+    genre
+    title
+    author
+    pageCount
+    isbn
+    rating
+    description
+
+BookCollection
+    List<Book> 
+    countOfBooks()

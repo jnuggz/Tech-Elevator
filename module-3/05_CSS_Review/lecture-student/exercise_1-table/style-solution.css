@@ -1,0 +1,31 @@
+table {
+    margin: 50px;
+}
+
+table th {
+    font-size: 1.5rem;
+    padding: 10px;
+    color: blue;
+}
+
+table tr td {
+    padding: 5px;
+}
+table tr td:first-child {
+    color: darkred;
+    font-weight: bold;
+    padding-right: 20px;
+    font-size: 1.2rem;
+}
+
+table tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+table tr:nth-child(odd) {
+    background-color: aliceblue;
+}
+
+table tr:first-child {
+    background-color: transparent;
+}

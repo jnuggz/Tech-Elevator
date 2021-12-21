@@ -1,0 +1,77 @@
+/*In lecture we identified:
+body,
+#hero footer,
+#featured section article div,
+#all-items section article
+
+as elements we felt would make great flex containers. 
+In order to further clean up the layout we can also
+add more flex containers on #all-items section
+and #featured section*/
+body,
+#hero footer,
+#featured section,
+#featured section article div,
+#all-items section,
+#all-items section article {
+  display: flex;
+}
+
+body,
+#all-items section {
+  flex-direction: column;
+}
+
+/* Centering Content Horizontally */
+body {
+    /*Because the body has flex-direction:column,
+    we must now adjust the align-items property to
+    center content horizontally*/
+  align-items: center;
+}
+
+#featured section article div {
+  justify-content: center;
+}
+
+#all-items section article {
+  justify-content: center;
+}
+
+/* Centering Content Vertically */
+#hero footer {
+  align-items: center;
+}
+
+#all-items section article {
+  align-items: center;
+}
+
+/* Applying Layout */
+#hero footer {
+  justify-content: space-between;
+}
+
+#all-items article div:last-child {
+    /*spacing elements require one of the flexbox items to 
+    inform the flexbox container of a width. The icons have
+    width assigned in the styles.css file, but the text doesn't
+    so we will set the flex-basis property to allocate space
+    relative to the others within the container*/
+  flex-basis: 80%;
+}
+
+#all-items article:nth-child(even) div:first-child {
+  order: 2;
+}
+
+@media screen and (max-width: 1024px) {
+  #featured section {
+    flex-wrap: wrap;
+  }
+
+  #featured section article:nth-child(even) {
+      /*decision to clean up the border on the even articles*/
+    border: none;
+  }
+}

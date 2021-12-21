@@ -1,0 +1,124 @@
+
+div.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-areas:
+        "header header header"
+        "menu-nav main upcoming-events"
+        "footer footer footer";
+    grid-gap: 10px;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: menu-nav;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: upcoming-events;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/*
+    This creates another grid with the
+    main as the container, so a grid within a grid
+*/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "sandwiches platters"
+        "full-stack rack-of-ram"
+        "usb-burger vegatables-array";
+    grid-gap: 10px;
+}
+
+main h2:first-child {
+    grid-area: sandwiches;
+    background-color: rgb(248, 194, 194);
+}
+
+main h2:last-of-type {
+    grid-area: platters;
+    background-color: rgb(205, 246, 205);
+}
+
+main div:nth-of-type(1) {
+    grid-area: full-stack;
+}
+
+main div:nth-of-type(2) {
+    grid-area: usb-burger;
+}
+
+main div:nth-of-type(3) {
+    grid-area: rack-of-ram;
+}
+
+main div:nth-of-type(4) {
+    grid-area:vegatables-array;
+}
+
+
+@media (max-width: 768px) {
+    div.container {
+
+        grid-template-columns: 200px 1fr;
+        grid-template-areas:
+            "header header"
+            "menu-nav main"
+            "upcoming-events upcoming-events"
+            "footer footer";
+
+    }  
+    img {
+        width: 25%;
+    }
+}
+
+@media(max-width: 320px) {
+    div.container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "menu-nav"
+            "main"
+            "upcoming-events"
+            "footer";
+    }  
+
+    img {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "sandwiches"
+            "full-stack"
+            "usb-burger"
+            "platters"
+            "rack-of-ram"
+            "vegatables-array";
+        grid-gap: 10px;
+    } 
+
+    main h2:first-child {
+        background-color: rgb(143, 143, 240);
+        
+    }
+}

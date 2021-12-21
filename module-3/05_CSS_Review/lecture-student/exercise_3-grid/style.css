@@ -1,0 +1,23 @@
+
+main section div.guest img {
+    height: 150px;
+    border-radius: 150px;
+}
+
+main section div.guest img.guestOfHonor {
+    height: 300px;
+    border-radius: 50px;
+}
+
+/* 
+Write your CSS to move the racers below this comment.
+Do not change any CSS above this comment or the HTML. 
+
+Solve this using CSS Grid.  Do not use Flexbox.
+
+HINT: Grid can do more than we talked about in lecture, 
+      including align or justify items in a cell similar to flexbox.
+*/
+
+
+

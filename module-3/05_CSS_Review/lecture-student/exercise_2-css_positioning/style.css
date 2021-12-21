@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(154, 177, 240);
+}
+
+header {
+    text-align: center;
+    height: 150px;
+    width: 1024px;
+}
+header img {
+    width: 400px;
+}
+main {
+    background-color: green;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+}
+div#track {
+    background-image: url("./img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 550px;
+    min-width: 1024px;
+    max-height: 550px;
+    max-width: 1024px;
+}
+
+div.racers {
+    padding-top: 40px;
+}
+
+div.racer {
+    width: 65px;
+    padding-left: 75px;
+    margin-top: 15px;
+}
+
+img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 50px;
+}
+
+/* 
+Write your CSS to move the racers below this comment.
+Do not change any CSS above this comment or the HTML. 
+*/
+
